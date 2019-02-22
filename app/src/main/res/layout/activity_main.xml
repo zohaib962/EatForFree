@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.shami.zohaib.eaitit4free.MainActivity">
+
+    <!--<ImageView-->
+        <!--android:id="@+id/backgroundIV"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@drawable/pic"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--/>-->
+    <ImageView
+        android:id="@+id/appBarr"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="@drawable/appbar_background"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HOW TO EATIT4FREE"
+        android:textSize="16sp"
+        android:textColor="#fff"
+        app:layout_constraintTop_toTopOf="@id/appBarr"
+        app:layout_constraintRight_toRightOf="@id/appBarr"
+        app:layout_constraintLeft_toLeftOf="@id/appBarr"
+        app:layout_constraintBottom_toBottomOf="@id/appBarr"/>
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toLeftOf="@id/appBarr"
+        app:layout_constraintTop_toBottomOf="@id/logoutTV" />
+
+    <ImageView
+        android:id="@+id/heading"
+        app:layout_constraintHorizontal_weight="2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:src="@drawable/heading11"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@id/logoImage"
+        app:layout_constraintRight_toRightOf="@id/appBarr"
+        app:layout_constraintTop_toBottomOf="@id/logoutTV" />
+
+    <ImageView
+        android:id="@+id/heading2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/heading22"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@id/heading"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/heading" />
+    <TextView
+        android:id="@+id/detail1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/heading2"
+        app:layout_constraintRight_toRightOf="@id/heading2"
+        app:layout_constraintTop_toBottomOf="@id/heading2"
+        android:text="All Orders Placed And Paid "
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_marginTop="8dp"
+        />
+    <TextView
+        android:id="@+id/detail2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/detail1"
+        app:layout_constraintRight_toRightOf="@id/detail1"
+        app:layout_constraintTop_toBottomOf="@id/detail1"
+        android:text="BUY 1 GET 1 FREE"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#000"/>
+    <TextView
+        android:id="@+id/detail3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/detail2"
+        app:layout_constraintRight_toRightOf="@id/detail2"
+        app:layout_constraintTop_toBottomOf="@id/detail2"
+        android:text="OR SIGNIFICANT DISCOUNT OFFERED."
+        android:textColor="#000"/>
+
+    <ImageView
+        android:id="@+id/heading3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/heading33"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="@id/detail3"
+        app:layout_constraintTop_toBottomOf="@id/detail3" />
+
+    <TextView
+        android:id="@+id/detail4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BUY 3 GET 1 FREE"
+        app:layout_constraintLeft_toLeftOf="@id/heading3"
+        app:layout_constraintRight_toRightOf="@id/heading3"
+        app:layout_constraintTop_toBottomOf="@id/heading3"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/detail5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#1A237E"
+        android:text="Orders Must Be Placed From The Same Premises And Be Of"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/detail4"
+        android:textAlignment="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"/>
+
+    <TextView
+        android:id="@+id/detail6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#1A237E"
+        android:text="The Same Value To Eatit4Free"
+        app:layout_constraintLeft_toLeftOf="@id/detail5"
+        app:layout_constraintRight_toRightOf="@id/detail5"
+        app:layout_constraintTop_toBottomOf="@id/detail5"
+        android:layout_marginTop="2dp"/>
+    <TextView
+        android:id="@+id/detail7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#F44336"
+        android:text="For More Information Visit Our Website"
+        app:layout_constraintLeft_toLeftOf="@id/detail6"
+        app:layout_constraintRight_toRightOf="@id/detail6"
+        app:layout_constraintTop_toBottomOf="@id/detail6"
+        android:layout_marginTop="2dp"/>
+
+    <ImageView
+        android:id="@+id/picc"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintTop_toBottomOf="@id/button2"
+        android:scaleType="fitXY"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+         />
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/button1"
+        android:elevation="1dp"
+        android:translationZ="1dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/button2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:onClick="openContactUs"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/button2"
+        android:onClick="openWebsite"
+        android:translationZ="1dp"
+        android:elevation="1dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/userDetailButton"
+        app:layout_constraintRight_toRightOf="parent" />
+    <TextView
+        android:id="@+id/lastDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="@id/button2"
+        app:layout_constraintLeft_toLeftOf="@id/button2"
+        app:layout_constraintBottom_toTopOf="@id/button2"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="#F44336"
+        android:fontFamily="sans-serif"
+        android:text="PLACE ORDER NOW"
+        />
+
+    <Button
+        android:id="@+id/userDetailButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/detail7"
+        app:layout_constraintRight_toRightOf="@+id/detail7"
+        app:layout_constraintLeft_toLeftOf="@+id/detail7"
+        android:text="View USer Details"
+        android:visibility="visible"
+        android:padding="4dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_bg"
+        android:onClick="goToLogin"
+        />
+
+    <TextView
+        android:id="@+id/logoutTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGOUT"
+        android:layout_marginRight="4dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_red_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appBarr"
+        android:onClick="clearSP"
+        />
+</android.support.constraint.ConstraintLayout>
+</ScrollView>

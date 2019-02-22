@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shami.zohaib.eaitit4free.LoginActivity">
+
+
+<ImageView
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:background="@drawable/splashh"
+    android:foreground="#c0000000"
+    />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/centerHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".4"
+        />
+
+
+    <TextView
+        android:id="@+id/titleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        app:layout_constraintBottom_toTopOf="@id/username"
+        app:layout_constraintStart_toEndOf="@id/username"
+        app:layout_constraintEnd_toStartOf="@id/username"
+        android:textColor="@android:color/white"
+        android:textSize="32sp"
+        />
+
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="@android:color/white"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/centerHorizontal">
+
+        <EditText
+            android:id="@+id/editusername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="USERNAME"
+            android:text=""
+            android:textColorHint="@android:color/white"
+            android:textColor="#ffffff" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/passwordTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="@android:color/white"
+        app:layout_constraintStart_toStartOf="@id/username"
+        app:layout_constraintEnd_toEndOf="@id/username"
+        app:layout_constraintTop_toBottomOf="@+id/centerHorizontal">
+
+        <EditText
+            android:id="@+id/editpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="PASSWORD"
+            android:text=""
+            android:inputType="textPassword"
+            android:textColorHint="@android:color/white"
+            android:textColor="#ffffff" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Login"
+        android:onClick="openDetailActivity"
+        app:layout_constraintTop_toBottomOf="@+id/passwordTV"
+        app:layout_constraintStart_toStartOf="@id/username"
+        app:layout_constraintEnd_toEndOf="@id/username"
+        />
+
+
+    <TextView
+        android:id="@+id/registerTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register |"
+        android:onClick="openRegisterActivity"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="@id/username"
+        app:layout_constraintTop_toBottomOf="@+id/loginBtn"
+        android:layout_marginTop="8dp"
+        />
+
+    <TextView
+        android:id="@+id/forgotPasswordTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password"
+        android:onClick="forgotPassword"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toEndOf="@id/registerTV"
+        app:layout_constraintTop_toBottomOf="@+id/loginBtn"
+        android:layout_marginTop="8dp"
+        />
+
+
+</android.support.constraint.ConstraintLayout>

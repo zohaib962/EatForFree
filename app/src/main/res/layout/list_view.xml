@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="8dp"
+    >
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:background="@drawable/listbg"
+    >
+
+    <ImageView
+        android:id="@+id/orderIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="20sp"
+        android:src="@mipmap/ic_launcher"
+        />
+    <TextView
+        android:id="@+id/resturantName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="asdasd"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@id/orderIV"
+        app:layout_constraintEnd_toStartOf="@id/orderIV"
+        app:layout_constraintTop_toBottomOf="@+id/orderIV"
+        />
+    <TextView
+        android:id="@+id/statuss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toEndOf="@id/orderIV"
+        app:layout_constraintEnd_toStartOf="@id/orderIV"
+        app:layout_constraintTop_toBottomOf="@+id/resturantName"
+        android:text="asfdadf"
+        />
+    <TextView
+        android:id="@+id/viewMoreTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/orderIV"
+        app:layout_constraintEnd_toStartOf="@id/orderIV"
+        android:layout_marginTop="16dp"
+        android:text="View Details"
+        android:padding="8dp"
+        android:gravity="center"
+        android:background="@drawable/round_corner"
+        app:layout_constraintTop_toBottomOf="@id/statuss"
+        />
+
+
+
+</android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

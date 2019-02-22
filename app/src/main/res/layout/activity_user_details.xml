@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8D6E63"
+    tools:context="com.shami.zohaib.eaitit4free.UserDetails">
+
+
+    <ImageView
+        android:id="@+id/appBarr2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#FFC107"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/heading1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order History"
+
+        android:textColor="#fff"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingTop="8dp"
+         />
+    <TextView
+        android:id="@+id/userdetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/detail"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/heading1"
+        />
+
+    <TextView
+        android:id="@+id/userdetail1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/detail2"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="@id/userdetail"
+        app:layout_constraintEnd_toEndOf="@id/userdetail"
+        app:layout_constraintTop_toBottomOf="@id/userdetail"
+        />
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:layout_constraintTop_toBottomOf="@id/appBarr2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="#795548"/>
+
+
+
+<ImageView
+    android:id="@+id/profileIV"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_profile11"
+    android:layout_marginTop="8dp"
+    app:layout_constraintStart_toStartOf="@id/appBarr2"
+    app:layout_constraintEnd_toEndOf="@id/appBarr2"
+    app:layout_constraintTop_toBottomOf="@id/appBarr2"
+    />
+    <TextView
+        android:id="@+id/fn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Username"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@id/appBarr2"
+        app:layout_constraintStart_toStartOf="@id/appBarr2"
+        app:layout_constraintTop_toBottomOf="@id/profileIV"
+        />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/orderlistview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/banner"
+        android:layout_margin="4dp"
+        />
+
+
+
+</android.support.constraint.ConstraintLayout>

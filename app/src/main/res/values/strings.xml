@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">EatIt4Free</string>
+    <string name="detail">Last 4 consecutive orders, eligible for EatIt4Free</string>
+    <string name="detail2">For complete order history, visit website</string>
+</resources>
